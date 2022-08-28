@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "saad",
+      "lastName": "saad",
+      "email": "saad@saad.saad",
+      "password": "12345",
+      "mobile": "061231233"
+    },
+    {
+      "id": "2",
+      "firstName": "ayman",
+      "lastName": "najb",
+      "email": "ayman@ayman.ayman",
+      "password": "12345",
+      "mobile": "061231233"
+    }
+  ],
+  "tableOfQuestion": [
+    {
+      "firstName": "ayman",
+      "question": "who's there",
+      "location": "Rabat"
+    },
+    {
+      "firstName": "ayman",
+      "question": "who's not there",
+      "location": "Rabat"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+<form [formGroup]="formGroup" (ngSubmit)="ask()" >
+  <div style="width: 90%;margin: 5%">
+    <div class="form-group">
+      <label style="color: black; justify-content: center" >Name</label>
+      <input formControlName="firstName" type="text" class="form-control" placeholder="name">
+    </div>
+    <div class="form-group">
+    <label style="color: black; justify-content: center" >What is your question ?</label>
+    <input formControlName="question" type="text" class="form-control" placeholder="Enter your question">
+  </div>
+    <div class="form-group">
+      <label style="color: black; justify-content: center" >Location</label>
+      <input formControlName="location" type="text" class="form-control" placeholder="Location">
+    </div>
+    <p></p>
+    <button type="submit" class="btn btn-primary">ASK</button>
+  </div>
+</form>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Question</th>
+    <th>Location</th>
+  </tr>
+  <tr *ngFor="let data of tableOfData">
+    <td>{{data.firstName}}</td>
+    <td>{{data.question}}</td>
+    <td>{{data.location}}</td>
+  </tr>
+
+</table>
+
+
+
+<!--<div>
+  <mat-table [dataSource]="tableOfData" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <mat-header-cell mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.firstName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="question">
+      <mat-header-cell mat-header-cell *matHeaderCellDef> Question </mat-header-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.question}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="location">
+      <mat-header-cell mat-header-cell *matHeaderCellDef> Location </mat-header-cell>
+      <mat-cell mat-cell *matCellDef="let element"> {{element.location}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row matRipple *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>-->
+
+
